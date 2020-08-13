@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="css/iconStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="icon-stack"></i>Game DashBoard</h1>
+            <div>
+                <i class="icon-menu" id="menu-button"></i>
+                <img src="https://lh3.googleusercontent.com/ogw/ADGmqu-IIuIo5VuORG0DoSyOLIl1M26DIv18vn1T5gvr=s32-c-mo" alt="">
+            </div>
+        </header>
+        <section class="menu" id="menu">
+            <nav>
+                <h2>Menu</h2>
+                <ul>
+                    <li id="buttonPanel" class="menu-panel menu-active"alt="0"><i class="icon-home"></i>Control Panel</li>
+                    <li id="buttonMoney" class="menu-money"><i class="icon-money"></i>Monetization</li>
+                    <li id="buttonComment" class="menu-comments"><i class="icon-comment"></i>User Comments</li>
+                    <li id="buttonTools" class="menu-tools"><i class="icon-mobile"></i>Development Tools</li>
+                </ul>
+            </nav>
+            <i id="buttonConfig" class="icon-config"></i>
+        </section>
+        <section class="dashboard">
+            <div id="dashboard-panel" class="dashboard-panel dashboard-active">
+                <div class="box">
+                    <h3>Total Revenue</h3>
+                    <p class="revenue"><i class="icon-money"></i> <span id="revenue"></span></p>
+                    <canvas class="canvas" id="revenue-c" width="250" height="250"></canvas>
+                </div>
+                <div class="box">
+                    <h3>New User</h3>
+                    <p class="newuser"><i class="icon-earth"></i> <span id="newuser"></span></p>
+                    <canvas class="canvas" id="newuser-c" width="250" height="250"></canvas>
+                </div>
+                <div class="box">
+                    <h3>Score</h3>
+                    <p class="score"><i class="icon-star1"></i> <span id="score"></span></p>
+                    <canvas class="canvas" id="score-c" width="250" height="250"></canvas>
+                </div>
+                <div class="box">
+                    <h3>...</h3>
+                    <p class="revenue" id="revenue">...</p>
+                    <canvas class="canvas" id="-c" width="250" height="250"></canvas>
+                </div>
+                <div class="box2 span2">
+                    <h3>Dashboard Features:</h3>
+                    <p><i class="icon-money"></i>   <i class="icon-comment"></i>   <i class="icon-mobile"></i></p>
+                </div>
+            </div>
+            <div id="dashboard-money" class="dashboard-money">
+
+            </div>
+            <div id="dashboard-comments" class="dashboard-comments">
+
+            </div>
+            <div id="dashboard-tools" class="dashboard-tools">
+                
+            </div>
+            <div id="dashboard-config" class="dashboard-config">
+                <div class="box span2">
+                    <h3>Pagina creada por: Nerio Balza</h3>
+                    <p> Follow me on:</p>
+                    <div>
+                        <a href="" class="icon-twitter"></a> <a href="" class="icon-github"></a> <a href="" class="icon-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
